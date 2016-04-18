@@ -13327,6 +13327,13 @@ textarea {
   padding: 15px 12px !important;
   overflow: hidden; }
 
+.pagination {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #069DE2; }
+  .pagination > .active > a, .pagination > .btn-text:hover > a, .pagination > .btn-text:focus > a {
+    background-color: #069DE2 !important;
+    border-color: #069DE2 !important; }
+
 .nav-pills > li a {
   color: #707070;
   background-color: transparent;
