@@ -112,7 +112,7 @@
         <div></div>
         <div>
             <div class="actions-list">
-                <div class="global-selector flex-container" id="teamSelector" role="button" tabindex="0">
+                <div class="global-selector flex-container team-selector" id="teamSelector" role="button" tabindex="0">
                     <div class="global-selector-active">
                         <div class="global-selector-label ">
                             Program:
@@ -345,7 +345,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="global-selector m-b-md flex-container" id="timeSelector" role="button" tabindex="0">
+                <div class="global-selector m-b-md flex-container time-selector" id="timeSelector" role="button" tabindex="0">
                     <div class="global-selector-active">
                         <div class="aggregation-icon glyphicon glyphicon-calendar">
                         </div>
@@ -6218,6 +6218,22 @@
       // debugger;
       $( ".subTier" ).toggleClass("tireID2-main-view-collapsed");
       $( ".subTier" ).toggleClass("tireID2-main-view-full");
+    });
+  });
+
+  $(function() {
+    $( ".team-selector" ).click(function(){
+      // debugger;
+      $( ".team-panel-wrapper" ).toggleClass("teamPanel-collapsed");
+      $( ".team-panel-wrapper" ).toggleClass("teamPanel-expanded");
+    });
+  });
+
+  $(function() {
+    $( ".time-selector" ).click(function(){
+      // debugger;
+      $( ".time-panel-wrapper" ).toggleClass("timePanel-collapsed");
+      $( ".time-panel-wrapper" ).toggleClass("timePanel-expanded");
     });
   });
 
